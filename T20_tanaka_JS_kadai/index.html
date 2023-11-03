@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寿司職人への道</title>
+    <link rel="stylesheet" href="./sushi.css/style.css">
+    <style>
+        /* 一部のスタイル追加 */
+        .slot {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .sushi-item {
+            text-align: center;
+        }
+
+        #training-section {
+            display: none;
+        }
+
+        #start-button {
+            display: block;
+            margin: 50px auto;
+            padding: 10px 30px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="top_title">寿司道場</h1>
+    <img id="topimgid" src="./sushi.img/top.jpeg" alt="職人">
+
+    <button id="start-button">修行を始める</button>
+
+    <div id="training-section">
+        <div class="slot_button">
+            <br>
+            <div class="slot">
+                <div class="sushi-item">
+                    <h2 class="neta">ネタ</h2>
+                    <img class="neta_img" src="./sushi.img/neta_top.jpeg" alt="ネタ">
+                    <button class="button3" onclick="pressButton('button3')">ネタを握る</button>
+                </div>
+
+                <div class="sushi-item">
+                    <h2 class="wasabi">わさび</h2>
+                    <img class="wasabi_img" src="./sushi.img/wasabi_top.jpeg" alt="わさび">
+                    <button class="button2" onclick="pressButton('button2')">わさびをつける</button>
+                </div>
+
+                <div class="sushi-item">
+                    <h2 class="syari">シャリ</h2>
+                    <img class="syari_img" src="./sushi.img/syari_top.png" alt="シャリ">
+                    <button class="button1" onclick="pressButton('button1')">シャリを握る</button>
+                </div>
+            </div>
+
+        </div>
+        <button class="reset" onclick="resetEverything()">修行を繰り返す</button>
+        <br><br>
+        <div class="generate_sushi">
+            <h2 class="output">修行の成果</h2>
+            <img class="output_img" src="./sushi.img/sushi_generate_top.jpeg" alt="寿司">
+        </div>
+
+
+        <!-- jQuaryのコード：JSより絶対上に書く -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!-- JSの紐付けコード -->
+        <script src="./sushi.js"></script>
+    </div>
+
+</body>
+
+</html>
